@@ -13,11 +13,7 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			//$text = $event['message']['text'];
-			//$text = "สวัสดี";
-			include('function.php');
-			$obj = new oopFunction;
-			$obj->connection("saleforce","DigitalSales");
-			$text = $obj->oncedata("select count(*) from orders");// count or maxid
+			//$text = "สวัสดี";			
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
