@@ -10,12 +10,13 @@ curl_setopt( $chOne, CURLOPT_SSL_VERIFYPEER, 0);
 curl_setopt( $chOne, CURLOPT_POST, 1);
 // Message
 curl_setopt( $chOne, CURLOPT_POSTFIELDS, $message);
-//∂È“µÈÕß°“√„ Ë√ÿª „ÀÈ„ Ë 2 parameter imageThumbnail ·≈–imageFullsize
+//¬∂√©√í¬µ√©√ç¬ß¬°√í√É√£√ä√®√É√ò¬ª √£√ã√©√£√ä√® 2 parameter imageThumbnail √°√Ö√êimageFullsize
 //curl_setopt( $chOne, CURLOPT_POSTFIELDS, "message=$message&imageThumbnail=http://10.10.10.10/small.jpg&imageFullsize=http://10.10.10.10/large.jpg");
+curl_setopt( $chOne, CURLOPT_POSTFIELDS, "message=$message");
 // follow redirects
 curl_setopt( $chOne, CURLOPT_FOLLOWLOCATION, 1);
 //ADD header array
-$headers = array( 'Content-type: application/x-www-form-urlencoded', 'Authorization: Bearer mgHiaNHqIMUjqA2s1rjMY8mXbjzc5bqv4u3T4dY3erB', );  // À≈—ß§”«Ë“ Bearer „ Ë line authen code ‰ª
+$headers = array( 'Content-type: application/x-www-form-urlencoded', 'Authorization: Bearer mgHiaNHqIMUjqA2s1rjMY8mXbjzc5bqv4u3T4dY3erB', );  // √ã√Ö√ë¬ß¬§√ì√á√®√í Bearer √£√ä√® line authen code √§¬ª
 curl_setopt($chOne, CURLOPT_HTTPHEADER, $headers);
 //RETURN
 curl_setopt( $chOne, CURLOPT_RETURNTRANSFER, 1);
