@@ -25,7 +25,8 @@ $result = curl_exec( $chOne );
 //Check error
 if(curl_error($chOne)) { echo 'error:' . curl_error($chOne); }
 else { $result_ = json_decode($result, true);
-echo "status : ".$result_['status']; echo "message : ". $result_['message']; }
+//echo "status : ".$result_['status']; echo "message : ". $result_['message']; //output status ,message
+}
 //Close connect
 curl_close( $chOne );
 ?>
