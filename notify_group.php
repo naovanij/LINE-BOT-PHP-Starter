@@ -8,7 +8,6 @@ $stickerPkg = 2; //stickerPackageId
 $stickerId = 34; //stickerId
  
 $res = notify_message($str,$stickerPkg,$stickerId,$token);
-//print_r($res);
 
 function notify_message($message,$stickerPkg,$stickerId,$token){
      $queryData = array(
